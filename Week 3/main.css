@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  font: 100% Helvetica, Arial, sans-serif;
+  color: #000000;
+  background-color: #FAEBD7;
+}
+@media only screen and (min-width: 800px) {
+  body div {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+h1,
+h2 {
+  margin: 0px;
+  padding: 0px;
+  font: 160% "Lora", serif;
+}
+
+a,
+a:visited {
+  color: #6495ED;
+  text-decoration: none;
+}
+
+a:active {
+  color: #DEB887;
+}
+
+a:hover {
+  color: #6495ED;
+  text-decoration: underline;
+}
+
+header {
+  min-width: 200px;
+  margin-bottom: 30px;
+  padding: 30px 15px;
+  text-align: right;
+  background-color: #6495ED;
+}
+@media only screen and (min-width: 800px) {
+  header {
+    margin-bottom: 0px;
+  }
+}
+header h1 a,
+header h1 a:visited {
+  color: #FAEBD7;
+  text-decoration: none;
+}
+header h1 a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+header nav ul {
+  list-style: none;
+  line-height: 2em;
+  font-size: 0.9em;
+}
+header nav a,
+header nav a:visited {
+  color: #FAEBD7;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+header nav a:active {
+  color: #DEB887;
+}
+
+article {
+  margin: 15px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 4px 4px #cccccc;
+}
+@media only screen and (min-width: 800px) {
+  article {
+    margin: 60px;
+  }
+}
+article .post-date {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: #999999;
+}
+article h2 {
+  margin-bottom: 50px;
+  font-size: 1.5em;
+}
+article h2 a,
+article h2 a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+article h2 a:active {
+  color: #DEB887;
+}
+article h2 a:hover {
+  color: #6495ED;
+  text-decoration: underline;
+}
+article .post-content figure {
+  margin: 0px auto;
+  text-align: center;
+}
+article .post-content p {
+  line-height: 1.7em;
+}
+
+/*# sourceMappingURL=main.css.map */

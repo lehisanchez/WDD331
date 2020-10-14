@@ -1,0 +1,122 @@
+
+main.css
+   4:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  10:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  10:14  ✖  Unexpected unit                                                                   length-zero-no-unit              
+  11:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  11:15  ✖  Unexpected unit                                                                   length-zero-no-unit              
+  12:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  15:1   ✖  Expected no more than 1 empty line                                                max-empty-lines                  
+  16:1   ✖  Expected no more than 1 empty line                                                max-empty-lines                  
+  18:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  19:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  20:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  21:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  22:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  23:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  23:25  ✖  Unexpected unit                                                                   length-zero-no-unit              
+  27:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  28:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  29:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  30:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  31:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  32:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  33:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  34:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  35:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  36:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  40:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  44:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  45:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  46:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  47:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  48:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  52:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  55:1   ✖  Expected no more than 1 empty line                                                max-empty-lines                  
+  57:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  61:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  64:1   ✖  Expected no more than 1 empty line                                                max-empty-lines                  
+  66:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  67:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  68:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  68:14  ✖  Unexpected unit                                                                   length-zero-no-unit              
+  69:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  69:15  ✖  Unexpected unit                                                                   length-zero-no-unit              
+  70:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  74:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  75:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  76:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  80:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  81:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  82:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  83:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  87:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  88:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  92:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  92:12  ✖  Expected "#ffffff" to be "#fff"                                                   color-hex-length                 
+  96:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  97:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  98:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+  99:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 103:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 104:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 105:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 106:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 109:15  ✖  Expected newline after ","                                                        selector-list-comma-newline-after
+ 109:32  ✖  Expected newline after ","                                                        selector-list-comma-newline-after
+ 109:34  ✖  Expected selector "main section img" to come before selector "header #logo img"   no-descending-specificity        
+ 110:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 111:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 112:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 113:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 114:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 114:21  ✖  Expected a leading zero                                                           number-leading-zero              
+ 117:1   ✖  Expected selector "main section img" to come before selector "header #logo img"   no-descending-specificity        
+ 118:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 121:29  ✖  Expected single space before "{"                                                  block-opening-brace-space-before 
+ 122:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 123:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 127:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 131:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 135:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 139:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 143:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 144:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 145:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 146:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 147:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 148:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 151:1   ✖  Expected no more than 1 empty line                                                max-empty-lines                  
+ 153:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 154:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 155:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 156:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 156:22  ✖  Unexpected unit                                                                   length-zero-no-unit              
+ 158:1   ✖  Expected empty line before rule                                                   rule-empty-line-before           
+ 159:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 160:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 161:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 161:22  ✖  Unexpected unit                                                                   length-zero-no-unit              
+ 163:1   ✖  Expected empty line before rule                                                   rule-empty-line-before           
+ 164:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 165:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 166:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 166:22  ✖  Unexpected unit                                                                   length-zero-no-unit              
+ 168:1   ✖  Expected empty line before rule                                                   rule-empty-line-before           
+ 169:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 170:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 171:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 173:1   ✖  Expected empty line before rule                                                   rule-empty-line-before           
+ 174:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 175:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 176:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 178:1   ✖  Expected empty line before rule                                                   rule-empty-line-before           
+ 179:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 180:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 181:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 182:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 182:22  ✖  Unexpected unit                                                                   length-zero-no-unit              
+ 184:1   ✖  Expected empty line before rule                                                   rule-empty-line-before           
+ 185:5   ✖  Expected indentation of 2 spaces                                                  indentation                      
+ 186:1   ✖  Unexpected missing end-of-source newline                                          no-missing-end-of-source-newline
+

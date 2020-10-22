@@ -1,0 +1,13 @@
+#deck {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  width: 200px;
+  height: 280px;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+/*# sourceMappingURL=main.css.map */

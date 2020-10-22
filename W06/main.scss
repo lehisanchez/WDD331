@@ -1,0 +1,20 @@
+
+// CARD VARIABLES
+$width: 200px;
+$height: $width * 1.4;
+
+#deck {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    width: $width;
+    height: $height;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+#card1 {
+
+}

@@ -9,11 +9,45 @@
 </head>
 
 <body>
-    <div id="board">
-        <div id="card1" class="card"></div>
-        <div id="card2" class="card"></div>
-    </div>
-    
+    <section class="table">
+        <div class="board">
+            <svg class="card" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <linearGradient id="Gradient1">
+                        <stop offset="5%" stop-color="white" />
+                        <stop offset="95%" stop-color="blue" />
+                    </linearGradient>
+
+                    <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="5%" stop-color="red" />
+                        <stop offset="95%" stop-color="orange" />
+                    </linearGradient>
+
+                    <pattern id="Pattern" x="0" y="0" width=".25" height=".25">
+                        <circle x="0" y="0" width="50" height="50" fill="skyblue" />
+                        <rect x="0" y="0" width="25" height="25" fill="url(#Gradient2)" />
+                        <circle cx="25" cy="25" r="20" fill="url(#Gradient1)" fill-opacity=".5" />
+                    </pattern>
+                </defs>
+                <rect fill="url(#Pattern)" height="100%" />
+            </svg>
+
+            <svg class="card" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <linearGradient id="CircleGradient">
+                        <stop offset="5%" stop-color="white" />
+                        <stop offset="95%" stop-color="black" />
+                    </linearGradient>
+                    <pattern id="FirstPattern" x="0" y="0" width=".25" height=".25">
+                        <circle cx="25" cy="25" r="25" fill="skyblue" fill="url(#CircleGradient)"/>
+                        <ellipse cx="25" cy="25" rx="25" ry="10" style="fill:purple" />
+                        <rect x="12.5" y="12.5" width="25" height="25" fill="white" />
+                    </pattern>
+                </defs>
+                <rect fill="url(#FirstPattern)" height="100%" />
+            </svg>
+        </div>
+    </section>
 </body>
 
 </html>

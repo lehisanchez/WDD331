@@ -1,0 +1,17 @@
+@import 'grid.css';
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 700px;
+  margin: 15px;
+  border: 5px solid black;
+  border-radius: 7px;
+}
+
+.icon {
+  width: 62.5px;
+}
+
+/*# sourceMappingURL=main.css.map */

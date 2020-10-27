@@ -1,0 +1,31 @@
+// CARD DIMENSIONS VARIABLES
+// =================================
+$width: 500px;
+$height: $width * 1.4;
+$icon-size: $width / 8;
+
+// COLORS
+// =================================
+$table-color: green;
+$card-border: black;
+$card-background: black;
+$glow-purple: rgba(174, 0, 255, 0.39);
+$glow-blue: rgba(0, 255, 255, 0.603);
+
+@import 'grid.css';
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $width;
+    height: $height;
+    margin: 15px;
+    border: 5px solid $card-border;
+    border-radius: 7px;
+    // background-color: $card-background;
+}
+
+.icon {
+    width: $icon-size;
+}

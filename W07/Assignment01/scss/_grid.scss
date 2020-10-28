@@ -1,17 +1,19 @@
 // =====================================
-// GRID STYLESHEET
+// GRID FRAMEWORK
 // =====================================
 
 
+// =====================================
 // VARIABLES
 // =====================================
 $num-columns : 8;
 $one-column : 100% / $num_columns;
 $loop-start: 1;
-$loop-end: $num-columns + 1;
+$loop-end: $num-columns+1;
 
 
-// CARD ELEMENTS
+// =====================================
+// GRID ELEMENTS
 // =====================================
 .row {
     display: flex;
@@ -27,6 +29,7 @@ $loop-end: $num-columns + 1;
 }
 
 
+// =====================================
 // MIXINs
 // =====================================
 @mixin col($span-num) {
@@ -38,6 +41,7 @@ $loop-end: $num-columns + 1;
 }
 
 
+// =====================================
 // LOOPS
 // =====================================
 @for $index from $loop-start to $loop-end {

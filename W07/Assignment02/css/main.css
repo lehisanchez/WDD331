@@ -1,4 +1,77 @@
-@import url("grid.scss");
+.row {
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  grid-template-rows: auto;
+}
+
+.cell {
+  text-align: center;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.offset-1 {
+  grid-column-start: 2;
+}
+
+.offset-2 {
+  grid-column-start: 3;
+}
+
+.offset-3 {
+  grid-column-start: 4;
+}
+
+.offset-4 {
+  grid-column-start: 5;
+}
+
+.offset-5 {
+  grid-column-start: 6;
+}
+
+.offset-6 {
+  grid-column-start: 7;
+}
+
+.offset-7 {
+  grid-column-start: 8;
+}
+
+.offset-8 {
+  grid-column-start: 9;
+}
+
 *,
 *:before,
 *:after {

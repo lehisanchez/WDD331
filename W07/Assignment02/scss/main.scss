@@ -1,11 +1,22 @@
-@import url('grid.scss');
+// =====================================
+// IMPORT GRID FRAMEWORK
+// =====================================
+@use 'grid';
 
-//variables to setup basic size and shape of the card and pips
+
+
+// =====================================
+// VARIABLES
+// =====================================
 $card-width: 40vw;
 $card-height: $card-width*1.4;
 $font-size-number: $card-width * 0.1;
 $icon-size: $card-width / 5;
 
+
+// =====================================
+// RESET
+// =====================================
 *,
 *:before,
 *:after {
@@ -14,7 +25,9 @@ $icon-size: $card-width / 5;
     padding: 0;
 }
 
-//styles to draw a basic outline of a card
+// =====================================
+// CARD
+// =====================================
 .card {
     border: 1px solid grey;
     height: $card-height;
@@ -24,7 +37,10 @@ $icon-size: $card-width / 5;
     box-shadow: 2px 2px 4px grey;
 }
 
-//because it is a card front we want a bit of extra padding
+
+// =====================================
+// CARD FRONT
+// =====================================
 .card-front {
     padding: .5em;
 }
@@ -32,23 +48,30 @@ $icon-size: $card-width / 5;
 
 
 
-//set icon size
+// =====================================
+// ICON
+// =====================================
 .icon {
     width: $icon-size;
     height: $icon-size;
 }
 
+// =====================================
+// CARD NUMBER + ICON
+// =====================================
 .number {
     text-align: center;
     font-size: $font-size-number;
-  //an icon that is part of a number should be half the normal size
     & > .icon {
         width: $icon-size * .5;
         height: $icon-size *.5;
     }
 }
 
-//rotate bottom pips 180deg
+
+// =====================================
+// ROTATE ICON
+// =====================================
 .rotate {
     transform: rotate(180deg);
 }

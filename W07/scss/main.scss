@@ -1,45 +1,50 @@
+@import 'grid.css'; 
+
 // CARD DIMENSIONS VARIABLES
 // =================================
-$width: 600px;
-$height: $width * 1.4;
-$icon-size: $width / 8;
+$card-width:  30vw;
+$card-height: $card-width * 1.4;
+$icon-size:   $card-width / 8;
+$font-size:   $card-width * 0.15;
 
-// COLORS
-// =================================
-$table-color: green;
-$card-border: black;
-$card-background: black;
-$glow-purple: rgba(174, 0, 255, 0.39);
-$glow-blue: rgba(0, 255, 255, 0.603);
-
-@import 'grid.css';
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: $width;
-    height: $height;
-    margin: 15px;
-    border: 5px solid $card-border;
-    border-radius: 7px;
-    // background-color: $card-background;
+    height: $card-height;
+    width: $card-width;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.card-front {
+    padding: 1em;
 }
 
 .icon {
-    width: 5em;
+    width: $icon-size;
+    height: $icon-size;
 }
 
-.number::after {
-    display: inline-block;
-}
+.number {
+    text-align: center;
+    font-size: $font-size;
 
-.number > .icon {
-    width: 3em;
+    & > .icon {
+        width: $icon-size * .5;
+        height: $icon-size *.5;
+    }
+
 }
 
 .cell {
-    border: 1px solid red;
+
 }
 
 .rotate {

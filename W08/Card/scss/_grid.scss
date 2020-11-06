@@ -1,0 +1,102 @@
+// =====================================
+// VARIABLES
+// =====================================
+$num-columns: 8;
+$one-column: 100% / $num_columns;
+$loop-start: 1;
+$loop-end: $num-columns+1;
+
+
+
+// =====================================
+// GRID
+// =====================================
+@supports (display: grid) {
+
+    // =====================================
+    // GRID ELEMENTS
+    // =====================================
+    .row {
+        display: grid;
+        grid-template-columns: repeat($num-columns, $one-column);
+        grid-template-rows: auto;
+    }
+
+    .cell {
+        text-align: center;
+    }
+
+    // =====================================
+    // MIXINs
+    // =====================================
+    @mixin col($span-num) {
+        grid-column: span $span-num;
+    }
+
+    @mixin offset($offset-num) {
+        grid-column-start: 1 + $offset-num;
+    }
+
+    // =====================================
+    // LOOPS
+    // =====================================
+    @for $index from $loop-start to $loop-end {
+        .col-#{$index} {
+            @include col($index);
+        }
+    }
+
+    @for $index from $loop-start to $loop-end {
+        .offset-#{$index} {
+            @include offset($index);
+        }
+    }
+
+}
+
+// =====================================
+// FLEX GRID
+// =====================================
+@supports not (display: grid) {
+
+    // =====================================
+    // GRID ELEMENTS
+    // =====================================
+    .row {
+        display: flex;
+    }
+
+    .cell {
+        align-content: center;
+        text-align: center;
+    }
+
+    .flex-push-right {
+        justify-content: flex-end;
+    }
+
+    // =====================================
+    // MIXINs
+    // =====================================
+    @mixin col($span-num) {
+        width: $one-column * $span-num;
+    }
+
+    @mixin offset($offset-num) {}
+
+    // =====================================
+    // LOOPS
+    // =====================================
+    @for $index from $loop-start to $loop-end {
+        .col-#{$index} {
+            @include col($index);
+        }
+    }
+
+    @for $index from $loop-start to $loop-end {
+        .offset-#{$index} {
+            @include offset($index);
+        }
+    }
+
+}

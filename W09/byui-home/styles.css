@@ -1020,6 +1020,10 @@ img {
   max-width: 100%;
 }
 
+.text-white {
+  color: white;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1036,10 +1040,223 @@ body {
   padding: 0;
 }
 
+header {
+  background-color: #eaeaea;
+  border-bottom: 1px solid gray;
+}
+header h2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "BYUI Open Sans";
+  font-weight: 300;
+  font-size: 1.2em;
+  text-align: center;
+  letter-spacing: 0.005em;
+  line-height: 3em;
+  color: #525352;
+}
+
 .site-banner {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
   height: 60px;
   background-color: #0076c6;
+}
+.site-banner form {
+  display: none;
+}
+
+.site-banner__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  color: white;
+  background-color: black;
+}
+.site-banner__left h1 {
+  display: none;
+}
+.site-banner__left a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+}
+.site-banner__left a .icon-byui-logo {
+  font-size: 1.88em;
+}
+
+.site-banner__right {
+  display: flex;
+  flex-direction: row;
+  padding-right: 1rem;
+}
+.site-banner__right a {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding-left: 0.9rem;
+  text-decoration: none;
+}
+.site-banner__right a .mobile-header-icon {
+  font-size: 2.5em;
+}
+.site-banner__right a .icon-menu {
+  font-size: 2em;
+}
+
+main {
+  display: grid;
+  margin: 0 auto;
+  padding: 30px 10px 0 10px;
+  max-width: 1200px;
+}
+
+.site-feature-image {
+  margin-bottom: 40px;
+}
+
+.site-interest-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-card {
+  margin-bottom: 40px;
+  border: 1px solid lightgray;
+}
+.image-card p {
+  margin: 0;
+  padding: 10px;
+  font-family: "BYUI Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+  color: #0076b6;
+}
+
+.button {
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 10px 18px;
+  display: block;
+  font-size: 15px;
+  font-family: arial;
+  text-transform: uppercase;
+  background-color: #efefef;
+  border: 1px solid #b4b3b5;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: left;
+}
+.button span {
+  float: right;
+  text-align: right;
+}
+
+.site-sidebar__resources {
+  margin-bottom: 40px;
+  padding: 0;
+}
+.site-sidebar__resources h3 {
+  margin: 0;
+  padding: 10px 20px;
+  font-family: "BYUI Open Sans";
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+  background-color: #727272;
+}
+.site-sidebar__resources ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-sidebar__resources ul li {
+  margin: 0;
+  padding: 8px 20px;
+  font-family: "BYUI Open Sans";
+  font-size: 15px;
+  font-weight: 400;
+  color: #0076b6;
+  border: 1px solid lightgray;
+  border-top: none;
+  background-color: #fafafa;
+}
+.site-sidebar__resources ul li:hover {
+  background-color: #dfdfdf;
+}
+
+.site-sidebar__important-dates {
+  margin-bottom: 40px;
+}
+.site-sidebar__important-dates table {
+  width: 100%;
+  font-family: "BYUI Open Sans";
+}
+.site-sidebar__important-dates table thead {
+  text-align: left;
+  background-color: #0076b6;
+}
+.site-sidebar__important-dates table tr {
+  border: 1px solid black;
+}
+.site-sidebar__important-dates table th {
+  padding: 10px 20px;
+  font-family: "BYUI Open Sans";
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+  border-bottom: 1px solid lightgray;
+}
+.site-sidebar__important-dates table td {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 13px;
+  border-bottom: 1px solid lightgray;
+}
+.site-sidebar__important-dates table td:first-child {
+  color: #020202;
+  font-size: 13px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.site-newsroom .news-item {
+  font-family: "BYUI Open Sans";
+  padding: 25px 0;
+  border-top: 1px solid #727272;
+}
+.site-newsroom .news-item span {
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  display: block;
+  font-family: arial;
+  font-size: 11px;
+  color: #020202;
+  font-weight: bold;
+}
+.site-newsroom .news-item h4 {
+  margin: 17px 0;
+  color: #0076b6;
+  font-family: "BYUI Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+}
+.site-newsroom .news-item p {
+  margin: 0;
+  font-family: serif;
+  color: #464646;
+  font-size: 1.1em;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1042,10 +1042,10 @@ body {
 
 header {
   background-color: #eaeaea;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #727272;
 }
 header h2 {
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
   font-family: "BYUI Open Sans";
   font-weight: 300;
@@ -1116,11 +1116,14 @@ main {
   display: grid;
   margin: 0 auto;
   padding: 30px 10px 0 10px;
-  max-width: 1200px;
+  max-width: 1140px;
 }
 
 .site-feature-image {
   margin-bottom: 40px;
+}
+.site-feature-image img {
+  width: 100%;
 }
 
 .site-interest-gallery {
@@ -1131,6 +1134,9 @@ main {
 .image-card {
   margin-bottom: 40px;
   border: 1px solid lightgray;
+}
+.image-card img {
+  width: 100%;
 }
 .image-card p {
   margin: 0;
@@ -1185,9 +1191,9 @@ main {
   font-size: 15px;
   font-weight: 400;
   color: #0076b6;
-  border: 1px solid lightgray;
+  border: 1px solid #b4b3b5;
   border-top: none;
-  background-color: #fafafa;
+  background-color: #f8f9fa;
 }
 .site-sidebar__resources ul li:hover {
   background-color: #dfdfdf;
@@ -1213,13 +1219,13 @@ main {
   font-size: 22px;
   font-weight: 400;
   color: white;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #b4b3b5;
 }
 .site-sidebar__important-dates table td {
   margin: 0;
   padding: 10px 20px;
   font-size: 13px;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #b4b3b5;
 }
 .site-sidebar__important-dates table td:first-child {
   color: #020202;
@@ -1230,8 +1236,12 @@ main {
 
 .site-newsroom .news-item {
   font-family: "BYUI Open Sans";
+  margin-bottom: 20px;
   padding: 25px 0;
   border-top: 1px solid #727272;
+}
+.site-newsroom .news-item figure {
+  display: none;
 }
 .site-newsroom .news-item span {
   margin-bottom: 6px;
@@ -1259,14 +1269,51 @@ main {
   line-height: 24px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
+  header {
+    border-bottom: none;
+  }
   header h2 {
+    font-size: 30px;
     text-align: left;
+    padding-left: 10px;
   }
 
   main {
-    padding-left: 0;
-    padding-right: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    column-gap: 30px;
+  }
+  main .site-feature-image {
+    grid-column: 1/9;
+  }
+  main .site-interest-gallery {
+    grid-column: 1/9;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+  }
+  main .site-sidebar {
+    grid-column: 9/13;
+    grid-row: 1/5;
+  }
+  main .site-newsroom {
+    grid-column: 1/9;
+  }
+  main .site-newsroom .news-item figure {
+    display: initial;
+    display: inline-block;
+    width: 165px;
+    float: left;
+    margin: 0 20px 0px 0;
+    padding: 0;
+  }
+  main .site-newsroom .news-item figure img {
+    margin: 0;
+    padding: 0;
+    width: 165px;
   }
 }
 

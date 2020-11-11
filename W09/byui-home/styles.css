@@ -1259,4 +1259,15 @@ main {
   line-height: 24px;
 }
 
+@media (min-width: 768px) {
+  header h2 {
+    text-align: left;
+  }
+
+  main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

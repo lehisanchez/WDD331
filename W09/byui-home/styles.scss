@@ -299,3 +299,19 @@ main {
   }
 
 }
+
+
+@media (min-width: 768px) {
+
+  header {
+    h2 {
+      text-align: left;
+    }
+  }
+
+  main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}

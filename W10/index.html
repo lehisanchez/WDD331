@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- GRANDPARENT CONTAINER TO SET AN OVERFLOW BOUNDARY -->
+    <div class="curtain">
+
+      <!-- PARENT COMPONENT TO PASS BOX PROPERTIES TO CHILDREN -->
+      <div class="curtain__wrapper">
+
+        <!-- CHECKBOX HACK TO CREATE A "STATE" (ON/OFF) -->
+        <input type="checkbox" checked>
+
+        <!-- LEFT CURTAIN -->
+        <div class="curtain__panel curtain__panel--left">
+          Hello &nbsp;
+        </div>
+
+        <!-- PRIZE PANEL -->
+        <div class="curtain__prize">
+          Merry Christmas!
+        </div>
+
+        <!-- RIGHT CURTAIN -->
+        <div class="curtain__panel curtain__panel--right">
+          World!
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

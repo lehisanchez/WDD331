@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// GRANDPARENT CONTAINER IN ORDER TO HIDE CHILD ELEMENTS WHEN THEY GO "OFFSCREEN" (OVERFLOW)
+.curtain {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+// PARENT CONTAINER TO PASS GLOBAL PROPERTIES TO CHILDREN (WIDTH & HEIGHT)
+.curtain__wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+// SHARED PROPERTY VALUES FOR BOTH CURTAINS
+
+// TAKE UP 50% OF THE SCREEN
+// PLACE CURTAIN ABOVE THE PRIZE PANEL (Z-INDEX)
+// ANIMATE TRANSITION (TRANSITION)
+// USE FLOAT TO MAKE CURTAIN PANELS APPEAR SIDE-BY-SIDE
+.curtain__panel {
+    display: flex;
+    align-items: center;
+    background: rgb(17, 165, 3);
+    width: 50%;
+    height: 100vh;
+    float: left;
+    position: relative;
+    z-index: 2;
+    transition: all 1s ease-out;
+    font-family: monospace;
+    font-size: 5em;
+    color: white;
+}
+
+.curtain__panel--left {
+    justify-content: flex-end;
+    transform: translateX(-100%);
+}
+
+.curtain__panel--right {
+    justify-content: flex-start;
+    transform: translateX(100%);
+}
+
+// PRIZE PANEL SHOULD TAKE UP THE ENTIRE SCREEN (ABSOLUTE)
+// AND HIDE BEHIND CURTAIN PANELS (Z-INDEX)
+.curtain__prize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(145, 0, 0);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+    font-size: 5em;
+    color: white;
+}
+
+// CHECKBOX SHOULD TAKE UP THE WHOLE SCREEN TO INTERCEPT ANY CLICKS (POSITION:ABSOLUTE)
+// PLACE IT ON TOP OF ANY OTHER ELEMENT (Z-INDEX)
+// HIDE IT (OPACITY)
+input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 0;
+}
+
+// WHEN THE CHECKBOX IS CHECKED
+
+// SLIDE THE FIRST PANEL BACK INTO IT'S INITIAL POSITION
+input[type=checkbox]:checked~div.curtain__panel--left {
+    transform: translateX(0);
+}
+
+// SLIDE THE SECOND PANEL BACK INTO IT'S INITIAL POSITION
+input[type=checkbox]:checked~div.curtain__panel--right {
+    transform: translateX(0);
+}

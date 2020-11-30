@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function toggleNav() {
+                var updateElement = document.getElementById("sidebar");
+                //toggle adds a class if it's not there or removes it if it is.
+                updateElement.classList.toggle("open");
+            }
+
+        </script>
+    </head>
+
+    <body>
+
+        <div id="sidebar">
+            <ul id="menu">
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+            </ul>
+            <div id="navbar">
+                <div class="menu-icon" id="menu-icon" onclick="toggleNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <h1>Hello World</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque doloremque dignissimos quisquam autem corrupti dolor consequuntur ipsa assumenda, ad nemo quibusdam eaque, asperiores praesentium. Blanditiis voluptate ea illo nisi culpa!
+            </p>
+        </div>
+    </body>
+
+</html>
